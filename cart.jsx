@@ -140,7 +140,7 @@ const photos = ["apple.png", "orange.png", "beans.png", "cabbage.png"];
       <li key={index}>
         <Image src={photos[index % 4]} width={70} roundedCircle></Image>
         <Button variant="primary" size="large">
-          {item.name}:{item.cost}:{item.country}
+          {item.name}:{item.cost}:{item.country}:{item.instock}
         </Button>
         <input name={item.name} type="submit" onClick={addToCart}></input>
       </li>
